@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+html, body , * {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-primary: #FFB923;
+  --animate-delay: 2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::-webkit-scrollbar {
+  width: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.previousButton {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+.nextButton {
+  display: none;
+}
+
+.carousel-control-next span, .carousel-control-prev span {
+  background-color: rgba(0,0,0,0.3)!important;
+  padding: 10px!important;
+}
+
+.carousel-item img {
+  height: 500px!important;
+}
+
+
+footer {
+  margin-top: 50px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: #fcfcfc;
+  height: 30px;
+  position: fixed;
+  bottom:0;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-dark .navbar-toggler {
+  border-color: #000!important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.navbar-toggler:focus {
+  box-shadow: none!important;
+}
+
+.navbar {
+    width: -webkit-fill-available;
+}
+
+@media only screen and (max-width: 870px) {
+  .carousel-item img {
+    height: 200px!important;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+@media only screen and (min-width: 1400px) {
+  .carousel-item img {
+    height: 800px!important;
   }
 }
