@@ -7,9 +7,11 @@ function Header() {
   return (
     <Container>
         <Navbar collapseOnSelect expand="lg" variant="dark">
-        <Navbar.Brand href="/">
-          <Logo src="/assets/logo.svg" alt="Logo" /> 
-        </Navbar.Brand>
+          <div>
+          <Navbar.Brand href="/">
+            <Logo src="/assets/logo.svg" alt="Logo" /> 
+          </Navbar.Brand>
+          </div>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">

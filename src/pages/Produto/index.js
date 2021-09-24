@@ -8,7 +8,8 @@ import {
     PrecoCartaoCard,
     ProdutoImgDestaque,
     SubTitleCard,
-    TitleCard
+    TitleCard,
+    Voltar
 } from './style';
 import {
     useParams
@@ -158,6 +159,7 @@ export default function Produto() {
 
     return (
         <Container>
+            <Voltar href="/">Voltar</Voltar>
             <ProdutoImgDestaque src={item.img} alt={item.nome}/>
             <ContainerInfo>
                 <TitleCard>{item.nome}</TitleCard>

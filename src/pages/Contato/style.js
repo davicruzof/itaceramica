@@ -4,13 +4,14 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     height: 100vh;
-    padding-bottom: 30px;
 `;
 
 export const Formulario = styled.form`
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
+    padding-bottom: 100px;
+    height: fit-content;
     @media only screen and (max-width: 870px) {
         width: 80%;
     }
@@ -51,5 +52,5 @@ export const Title = styled.span`
     text-align: center;
     width: 100%;
     font-size: 24px;
-    margin-top: 50px;
+    margin-top: 25px;
 `;

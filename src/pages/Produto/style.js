@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-// export const Container = styled.div`
-//     width: -webkit-fill-available;
-// `;
-
 export const Container = styled.div`
     width: 100%;
     background: #fff;
@@ -15,10 +11,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     @media only screen and (max-width: 870px) {
-        padding: 0;
-        padding-right: 10px;
         margin-top: 0;
         width: -webkit-fill-available;
+        flex-direction:column;
+        padding: 30px;
     }
 `;
 
@@ -26,6 +22,10 @@ export const ProdutoImgDestaque = styled.img`
     width: 40%;
     height: auto;
     object-fit: contain;
+    @media only screen and (max-width: 870px) {
+        width: 90%;
+        margin: 50px 0;
+    }
 `;
 
 
@@ -77,4 +77,15 @@ export const PrecoCartaoCard = styled.span`
 
 export const Description = styled.p`
     margin-top: 30px;
+    text-align: justify;
+`;
+
+export const Voltar = styled.a`
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    @media only screen and (max-width: 870px) {
+        left: 40px;
+    }
 `;

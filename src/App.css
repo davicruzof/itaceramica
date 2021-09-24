@@ -69,9 +69,29 @@ footer {
     width: -webkit-fill-available;
 }
 
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+  justify-content: flex-end;
+  width: -webkit-fill-available;
+}
+
+.navbar-expand-lg .navbar-nav a{
+  padding: 0 25px;
+}
+
 @media only screen and (max-width: 870px) {
   .carousel-item img {
     height: 200px!important;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .navbar-expand-lg .navbar-nav a{
+    text-align: center;
+    padding: 15px 0;
   }
 
 }

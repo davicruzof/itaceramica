@@ -50,16 +50,16 @@ export const CardDestaque = styled.div`
     align-items: center;
     @media only screen and (max-width: 870px) {
         padding: 0;
-        padding-right: 10px;
+        padding-right: 30px;
         margin-top: 0;
         width: -webkit-fill-available;
     }
 `;
 
 export const ProdutoImgDestaque = styled.img`
-    width: 100%;
-    height: 500px;
-    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 `;
 
 
@@ -69,9 +69,6 @@ export const ProdutoImg = styled.img`
     width: 100%;
     height: 150px;
     object-fit: contain;
-    @media only screen and (max-width: 870px) {
-
-    }
 `;
 
 export const ContainerInfo = styled.div`
