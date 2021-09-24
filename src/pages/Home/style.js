@@ -10,6 +10,7 @@ export const CardList = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 `;
 
 export const Card = styled.div`
